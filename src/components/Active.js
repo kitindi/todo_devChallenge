@@ -3,7 +3,7 @@ import {TodoContext} from '../ContextProvider'
 
 
 
-const AllTasks = () => {
+const Active = () => {
 
     const {addTasks, task, handleTodos} = useContext(TodoContext)
     console.log(task);
@@ -14,10 +14,10 @@ const AllTasks = () => {
              <button  onClick={handleTodos}>Add</button>
          </div>
          <div className="lists">
-
+Active
          </div>
         </div>
     )
 }
 
-export default AllTasks
+export default Active
